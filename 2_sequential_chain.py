@@ -26,6 +26,7 @@ parser = StrOutputParser()
 chain = prompt1 | model1 | parser | prompt2 | model2 | parser
 
 config = {
+    'run_name': 'Sequential Report Generation',
     'tags': ['llm app', 'report generation', 'summarization'],
     'metadata':{'moedel1': 'llama-3.1-8b-instant', 'model1_temp': 0.7, 'parser':'stroutputparser'}
 }
